@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://azadvenu812:MongoAtlasDb812@cluster0.2cabyqj.mongodb.net/Studententry?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
 console.log('My MongoDB is connected successfully!!!')
 })

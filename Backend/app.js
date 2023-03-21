@@ -4,6 +4,7 @@ const logger = require('morgan')   // for seeing APIs calls in terminal
 const PORT = 8524
 const app = new express()
 
+require('dotenv').config()   // to call dotenv for securing MongoDB id.
 require('./middlewares/MongoDB')  //  to call MongoDB.js file
 
 
